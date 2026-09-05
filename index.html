@@ -12,43 +12,212 @@
 <body>
 
     <header>
-        <h1>Meu Site de Filmes</h1>
-        <p>Alguns dos meus filmes favoritos</p>
+
+        <nav>
+            <h2>🎬 CineBlog</h2>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#filmes">Filmes</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <section id="inicio" class="inicio">
+            <h1>Bem-vindo ao CineBlog</h1>
+
+            <p>
+                Um site simples para conhecer alguns filmes
+                e descobrir novas opções para assistir.
+            </p>
+
+            <button onclick="mostrarMensagem()">
+                Ver recomendação
+            </button>
+
+            <p id="mensagem"></p>
+        </section>
+
     </header>
+
 
     <main>
 
-        <section class="filmes">
+        <section id="filmes">
 
-            <div class="filme">
-                <img src="img/filme1.jpg" alt="Imagem do filme 1">
-                <h2>Filme 1</h2>
-                <p>Um filme muito interessante para assistir.</p>
-            </div>
+            <h2>🎥 Filmes em destaque</h2>
 
-            <div class="filme">
-                <img src="img/filme2.jpg" alt="Imagem do filme 2">
-                <h2>Filme 2</h2>
-                <p>Outro filme que vale a pena conhecer.</p>
-            </div>
+            <div class="filmes">
 
-            <div class="filme">
-                <img src="img/filme3.jpg" alt="Imagem do filme 3">
-                <h2>Filme 3</h2>
-                <p>Uma ótima opção para assistir no fim de semana.</p>
+                <div class="filme">
+
+                    <img src="img/filme1.jpg" alt="Imagem do primeiro filme">
+
+                    <h3>Filme 1</h3>
+
+                    <p>
+                        Uma aventura cheia de ação,
+                        emoção e momentos interessantes.
+                    </p>
+
+                    <p class="nota">⭐ 9/10</p>
+
+                </div>
+
+
+                <div class="filme">
+
+                    <img src="img/filme2.jpg" alt="Imagem do segundo filme">
+
+                    <h3>Filme 2</h3>
+
+                    <p>
+                        Uma história divertida,
+                        com personagens marcantes.
+                    </p>
+
+                    <p class="nota">⭐ 8/10</p>
+
+                </div>
+
+
+                <div class="filme">
+
+                    <img src="img/filme3.jpg" alt="Imagem do terceiro filme">
+
+                    <h3>Filme 3</h3>
+
+                    <p>
+                        Uma ótima opção para quem gosta
+                        de histórias emocionantes.
+                    </p>
+
+                    <p class="nota">⭐ 9.5/10</p>
+
+                </div>
+
             </div>
 
         </section>
 
-        <button onclick="mostrarMensagem()">Clique aqui</button>
 
-        <p id="mensagem"></p>
+        <section class="categorias">
+
+            <h2>🍿 Categorias</h2>
+
+            <div class="categorias-lista">
+
+                <div>
+                    <h3>🎬 Ação</h3>
+                    <p>Filmes com muita aventura e emoção.</p>
+                </div>
+
+                <div>
+                    <h3>😂 Comédia</h3>
+                    <p>Filmes para assistir e dar boas risadas.</p>
+                </div>
+
+                <div>
+                    <h3>👻 Terror</h3>
+                    <p>Para quem gosta de histórias assustadoras.</p>
+                </div>
+
+                <div>
+                    <h3>🚀 Ficção</h3>
+                    <p>Histórias envolvendo tecnologia e outros mundos.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="sobre" class="sobre">
+
+            <h2>📖 Sobre o site</h2>
+
+            <p>
+                O CineBlog é um projeto desenvolvido utilizando
+                HTML, CSS e JavaScript. O objetivo é criar um site
+                simples para apresentar filmes e praticar
+                desenvolvimento web.
+            </p>
+
+            <p>
+                As imagens utilizadas ficam armazenadas dentro
+                da pasta <strong>img</strong>.
+            </p>
+
+        </section>
+
+
+        <section class="curiosidade">
+
+            <h2>💡 Curiosidade</h2>
+
+            <p>
+                Você sabia que existem vários gêneros diferentes
+                de filmes? Cada gênero possui características
+                próprias e pode agradar diferentes públicos.
+            </p>
+
+        </section>
+
+
+        <section id="contato" class="contato">
+
+            <h2>📩 Entre em contato</h2>
+
+            <form onsubmit="enviarFormulario(event)">
+
+                <label for="nome">Nome:</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+                <label for="email">E-mail:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+                <label for="mensagemContato">Mensagem:</label>
+
+                <textarea
+                    id="mensagemContato"
+                    placeholder="Digite sua mensagem"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+            <p id="resposta"></p>
+
+        </section>
 
     </main>
 
+
     <footer>
-        <p>Meu Site - 2026</p>
+
+        <p>🎬 CineBlog - 2026</p>
+
+        <p>Site desenvolvido para estudo de HTML, CSS e JavaScript.</p>
+
     </footer>
+
 
     <script src="script.js"></script>
 
