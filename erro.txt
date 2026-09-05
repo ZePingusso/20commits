@@ -1,4 +1,10 @@
-Arquivo criado para armazenar possíveis erros do projeto.
+REGISTRO DE ERROS
 
-Exemplo:
-Erro: imagem não encontrada.
+09/04/2026
+
+Nenhum erro encontrado no momento.
+
+Possíveis erros:
+- Imagem não encontrada.
+- Arquivo CSS não carregado.
+- Arquivo JavaScript não carregado.
