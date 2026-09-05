@@ -1,0 +1,4 @@
+Arquivo criado para armazenar possíveis erros do projeto.
+
+Exemplo:
+Erro: imagem não encontrada.
